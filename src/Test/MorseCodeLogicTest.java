@@ -69,5 +69,10 @@ class MorseCodeLogicTest {
     void testHelloWorldEasterEgg() {
         assertEquals(".... . .-.. .-.. --- / .-- --- .-. .-.. -..", MorseCodeLogic.toMorse("HELLO WORLD"));
     }
+
+    @Test
+    void testToMorseWhitespaceOnly() {
+        assertEquals("/ / /", MorseCodeLogic.toMorse("   "));
+    }
 }
 

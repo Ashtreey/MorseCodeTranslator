@@ -41,7 +41,7 @@ public class MorseCodeLogic {
         englishToMorse.put('Z', "--..");
         englishToMorse.put(' ', "/");
 
-        // Skapa motsvarande översättningar från morsekod till engelska
+        // Skapa översättningar från morsekod till engelska
         for (Map.Entry<Character, String> entry : englishToMorse.entrySet()) {
             morseToEnglish.put(entry.getValue(), entry.getKey());
         }
