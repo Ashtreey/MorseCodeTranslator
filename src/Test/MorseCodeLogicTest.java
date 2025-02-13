@@ -69,7 +69,7 @@ class MorseCodeLogicTest {
     void testHelloWorldEasterEgg() {
         assertEquals(".... . .-.. .-.. --- / .-- --- .-. .-.. -..", MorseCodeLogic.toMorse("HELLO WORLD"));
     }
-
+    // Test för att se så "/" tolkas som mellanslag
     @Test
     void testToMorseWhitespaceOnly() {
         assertEquals("/ / /", MorseCodeLogic.toMorse("   "));
