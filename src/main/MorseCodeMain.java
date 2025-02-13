@@ -3,6 +3,7 @@ package main;
 import logik.MorseCodeLogic;
 import java.util.Scanner;
 
+
 // Huvudklass som hanterar användarens inmatning och utdata
 public class MorseCodeMain {
     public static void main(String[] args) {

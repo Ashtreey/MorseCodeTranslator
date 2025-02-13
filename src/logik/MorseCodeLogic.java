@@ -3,6 +3,7 @@ package logik;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class MorseCodeLogic {
     // Skapa mappar för att lagra översättningar mellan engelska och morsekod
     private static final Map<Character, String> englishToMorse = new HashMap<>();

@@ -4,6 +4,7 @@ import logik.MorseCodeLogic;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 // Testklass för MorseCodeLogic
 class MorseCodeLogicTest {
     // Test för att översätta engelsk text till Morse-kod
