@@ -12,7 +12,7 @@ public class MorseCodeLogic {
     static {
 
         
-        // Initialisera mappen med engelska bokstäver och deras motsvarande morsekoder
+        // Initialisera mappen med engelska alfabetet och deras motsvarande morsekoder
         englishToMorse.put('A', ".-");
         englishToMorse.put('B', "-...");
         englishToMorse.put('C', "-.-.");

@@ -17,9 +17,12 @@ class MorseCodeLogicTest {
     // Test för att hantera ogiltiga inmatningar i toMorse
     @Test
     void testToMorseInvalidInput() {
-        assertThrows(IllegalArgumentException.class, () -> MorseCodeLogic.toMorse("@"));
-        assertThrows(IllegalArgumentException.class, () -> MorseCodeLogic.toMorse(""));
-        assertThrows(IllegalArgumentException.class, () -> MorseCodeLogic.toMorse("123"));
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> MorseCodeLogic.toMorse("@"));
+        assertEquals("Felaktigt tecken: @", exception.getMessage());
+        exception = assertThrows(IllegalArgumentException.class, () -> MorseCodeLogic.toMorse(""));
+        assertEquals("Fältet kan ej vara tomt.", exception.getMessage());
+        exception = assertThrows(IllegalArgumentException.class, () -> MorseCodeLogic.toMorse("123"));
+        assertEquals("Felaktigt tecken: 1", exception.getMessage());
     }
 
     // Test för att översätta Morse-kod till engelsk text
