@@ -55,7 +55,7 @@ class MorseCodeLogicTest {
         assertEquals(" ", MorseCodeLogic.toEnglish("/"));
     }
 
-    // Test för blandade versaler och gemener
+    // Test för blandning av stora och små bokstäver
     @Test
     void testMixedCaseString() {
         assertEquals(".... . .-.. .-.. ---", MorseCodeLogic.toMorse("HeLLo"));
